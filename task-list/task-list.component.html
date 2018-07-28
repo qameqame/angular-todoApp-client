@@ -3,7 +3,7 @@
 </p>
 <ul>
   <li *ngFor="let todoTask of taskList" (click)="select(todoTask)">
-    <p class="left">{{todoTask}}</p>
+    <p class="left">{{todoTask.id}},{{todoTask.title}},{{todoTask.priority}}</p>
   </li>
 </ul>
 <div *ngIf="selected">クリックしたもの:{{selected}}</div>

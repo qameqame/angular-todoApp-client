@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Task } from '../Task';
+import { TaskDataService } from '../service/task-data.service';
 
 @Component({
   selector: 'app-task-edit',
@@ -9,15 +10,11 @@ import { Task } from '../Task';
 export class TaskEditComponent implements OnInit {
 
   task = new Task('0000', '', '');
-  constructor() { }
+  constructor(private dataService: TaskDataService) { }
   ngOnInit() {
   }
   sendInput() {
-    alert(`
-       ID:${this.task.id}
-       TITLE:${this.task.title}
-       PRIORITY:${this.task.priority} 
-       `);
+    this.dataService.addTask(new Task(this.task.id, this.task.title, this.task.priority));
   }
 
 }
