@@ -1,0 +1,9 @@
+<p>
+  <i>リスト内の項目をクリックしてみてください</i>
+</p>
+<ul>
+  <li *ngFor="let todoTask of taskList" (click)="select(todoTask)">
+    <p class="left">{{todoTask}}</p>
+  </li>
+</ul>
+<div *ngIf="selected">クリックしたもの:{{selected}}</div>

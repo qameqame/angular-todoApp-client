@@ -1,0 +1,10 @@
+<div id="edit-form">
+  <input type="text" name="id" [(ngModel)]="task.id">
+  <input type="text" name="title" [(ngModel)]="task.title">
+  <select name="priority" [(ngModel)]="task.priority">
+    <option>すぐやる</option>
+    <option>あとで</option>
+    <option>気が向いたら</option>
+  </select>
+  <button (click)="sendInput()">リストに追加</button>
+</div>

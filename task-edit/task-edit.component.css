@@ -1,0 +1,29 @@
+#edit-form {
+    position: absolute;
+    top:10%;
+    left:10%;
+    width:100%;
+}
+#edit-error {
+    border :1px solid #FF3366;
+    color : #FF3366;
+    width: 80%;
+}
+input, select {
+    display:block;
+    border:1px solid #D7DBDD;
+    margin:10px 20px;
+    border-radius: 4px;
+    box-shadow: none;
+    height: 3em;
+    width: 80%;
+}
+button {
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #4EBBE4;
+    margin: 10px 20px;
+    border-radius: 4px;
+    height: 3em;
+    width: 80%;
+}
